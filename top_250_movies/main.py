@@ -35,9 +35,6 @@ def main():
                     "rating": row.find(
                         "td", attrs={"class": "ratingColumn imdbRating"}
                     ).strong.text,
-                    "ratings": row.find(
-                        "td", attrs={"class": "ratingColumn"}
-                    ).strong.text,
                 }
             )
 
